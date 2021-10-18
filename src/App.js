@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './components/Home/Home';
-import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
 import NotFound from './components/NotFound/NotFound';
 import Footer from "./components/Footer/Footer";
 
@@ -10,7 +10,7 @@ function App() {
   return (
    <div>
      <Router>
-        <Navbar />
+        <Header />
         <Switch>
         <Route exact path="/" >
         <Home />

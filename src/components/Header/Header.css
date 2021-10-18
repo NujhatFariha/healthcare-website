@@ -1,0 +1,10 @@
+.title {
+  color: rgb(245, 220, 247);
+  font-weight: 600;
+
+}
+  @media screen and (max-width: 400px) {
+    .title {
+      display: none;
+    }
+  }
