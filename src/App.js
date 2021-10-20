@@ -1,30 +1,57 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import PrivateRoute from "./PrivateRoute/PrivateRoute.js";
+import AuthProvider from './Context/AuthProvider';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import NotFound from './components/NotFound/NotFound';
 import Footer from "./components/Footer/Footer";
+import Services from "./components/Services/Services";
+import Contact from "./components/Contact/Contact";
+import SignUp from "./components/SignUp/SignUp";
+import Login from "./components/Login/Login";
+import About from "./components/About/About";
+
+
 
 function App() {
   return (
-   <div>
-     <Router>
-        <Header />
-        <Switch>
-        <Route exact path="/" >
-        <Home />
-        </Route>
-        <Route exact path="/home" >
-        <Home />
-        </Route>
-        <Route path="*">
-        <NotFound />
-        </Route>
-        </Switch>
-        <Footer/>
-      </Router>
-   </div>
+    <div>
+      <AuthProvider>
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/" >
+              <Home />
+            </Route>
+            <Route exact path="/home" >
+              <Home />
+            </Route>
+            <Route exact path="/services" >
+              <Services />
+            </Route>
+            <Route exact path="/about" >
+              <About />
+            </Route>
+            <Route exact path="/contact" >
+              <Contact />
+            </Route>
+            <Route exact path="/signup" >
+              <SignUp />
+            </Route>
+            <Route exact path="/login" >
+              <Login />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      </AuthProvider>
+    </div>
   );
 }
 

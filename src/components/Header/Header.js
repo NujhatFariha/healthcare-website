@@ -1,40 +1,49 @@
 import React from 'react';
-import './Header.css';
-import logo from "../../images/logo.png";
-import { NavLink } from "react-router-dom";
-import { Container, Nav, Navbar } from "react-bootstrap";
-
+import { Link } from 'react-router-dom';
+import logo from '../../images/logo.png';
+import "./Header.css"
+import useAuth from '../../hooks/useAuth';
 const Header = () => {
-
+    const { user, logOut } = useAuth();
     return (
-        <div className="">
-            <Navbar style={{ backgroundColor: '#463250' }}>
-                <Container>
-                    <Navbar.Brand as={NavLink} className="text-white" to="/home">
-                        <img width="30px" src={logo} alt="Logo" />{" "}
-                        <span className="title">MediGlow</span>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto align-items-center" >
-                            <Nav.Link as={NavLink} to="/home" className="text-white">
-                                Home
-                            </Nav.Link>
-                            <Nav.Link as={NavLink} to="/services" className="text-white">
-                                Services
-                            </Nav.Link>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style={{ backgroundColor: '#463250' }}>
 
-                            <Nav.Link as={NavLink} to="/about" className="text-white">
-                                About
-                            </Nav.Link>
+                <div class="container-fluid">
+                    <img className="ms-4 logo" src={logo} alt="" style={{ width: '30px' }} />
+                    <span className="title ms-1">MediGlow</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto pe-5 ">
+                            <li class="nav-item">
+                                <Link to="/home" className="text-light text-decoration-none">Home</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to="/services" className="text-light text-decoration-none ps-3">Services</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to="/about" className="text-light text-decoration-none ps-3">About Us</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to="/contact" className="text-light text-decoration-none ps-3">Contact</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to="/signup" className="text-light text-decoration-none ps-3">Sign Up</Link>
+                            </li>
+                            {/* <li class="nav-item">
+                                <Link to="/login" className="text-light text-decoration-none ps-3">Login</Link>
+                            </li> */}
 
-                            <Nav.Link as={NavLink} to="/contact" className="text-white">
-                                Contact
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+                            <Link to="/login" className="text-light text-decoration-none ps-3">Login</Link>
+                            <span className="text-light text-decoration-none ps-3 pe-2">{user.displayName} </span>
+                            {user?.email && <button className="btn-logout" onClick={logOut}>Log out</button>}
+                        </ul>
+                    </div>
+
+                </div>
+            </nav >
         </div >
     );
 };

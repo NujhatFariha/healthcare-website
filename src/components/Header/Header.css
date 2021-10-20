@@ -1,7 +1,17 @@
+
 .title {
   color: rgb(245, 220, 247);
   font-weight: 600;
+  font-size: 20px;
+}
+.btn-logout{
 
+  color:white;
+  background-color: rgb(173, 123, 152);
+  border: none;
+  border-radius: 5px;
+  padding: 1px 10px;
+  font-weight: 500;
 }
   @media screen and (max-width: 400px) {
     .title {

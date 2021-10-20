@@ -1,4 +1,4 @@
-.banner {
+  .banner {
     height: 100vh;
     width: 100%;
     background-image: url("https://www.expats.cz/images/publishing/articles/2021/08/1280_650/illustrative-image-istock-eakrin-rasadonyindee-twjsl.jpg"),
@@ -8,11 +8,9 @@
     background-size: cover;
     position: relative;
   }
-   body {
+  body {
     width: 100%;
   } 
-  
-  
   .visit-btn {
     background: #663c6d;
     border: none;
@@ -22,5 +20,10 @@
     font-weight: 700;
     font-size: 18px;
     color: rgb(205, 215, 253);
+
+  }
+  .visit-btn:hover {
+    background-color: rgba(9, 7, 29, 0.815);
+    color: rgb(255, 255, 255);
 
   }

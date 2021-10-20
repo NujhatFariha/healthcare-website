@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div>
             <div className="banner d-flex  align-items-center">
-                <div className="row container">
+                <div className="row container mt-5">
                     <div className="col-md-7 col-sm-9 text-center">
                         <h1 className="text-light fw-bolder mb-3" style={{fontSize:'50px'}}>Welcome to <span style={{color:'rgb(126, 70, 145)', fontSize:'55px'}}> MediGlow</span></h1>
                         <h2 className="fw-bolder mb-3" style={{fontSize:'35px', color:'rgb(71, 76, 112)'}}>Access to Quality Healthcare</h2>
