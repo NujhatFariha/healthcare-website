@@ -1,5 +1,4 @@
-
-// import PrivateRoute from "./PrivateRoute/PrivateRoute.js";
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AuthProvider from './Context/AuthProvider';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,6 +8,7 @@ import Header from './components/Header/Header';
 import NotFound from './components/NotFound/NotFound';
 import Footer from "./components/Footer/Footer";
 import Services from "./components/Services/Services";
+import SingleService from './components/SingleService/SingleService';
 import SignUp from "./components/SignUp/SignUp";
 import Login from "./components/Login/Login";
 import About from "./components/About/About";
@@ -27,22 +27,25 @@ function App() {
             <Route exact path="/" >
               <Home />
             </Route>
-            <Route exact path="/home" >
+            <Route path="/home" >
               <Home />
             </Route>
-            <Route exact path="/services" >
+            <Route path="/services" >
               <Services />
             </Route>
-            <Route exact path="/about" >
+            <PrivateRoute path="/service/:serviceId">
+              <SingleService />
+            </PrivateRoute>
+            <PrivateRoute path="/about" >
               <About />
-            </Route>
-            <Route exact path="/help" >
+            </PrivateRoute>
+            <PrivateRoute path="/help" >
               <Help />
-            </Route>
-            <Route exact path="/signup" >
+            </PrivateRoute>
+            <Route path="/signup" >
               <SignUp />
             </Route>
-            <Route exact path="/login" >
+            <Route path="/login" >
               <Login />
             </Route>
             <Route path="*">

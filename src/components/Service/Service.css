@@ -2,3 +2,13 @@
     height:500px;
     background-color: rgb(226, 226, 226);
 }
+
+.btn-details{
+    border: none;
+    color: #ffffff;
+    background-color:rgb(102, 32, 56);
+    font-weight: 600;
+    padding: 6px 6px;
+    border-radius: 10px;
+
+}

@@ -10,7 +10,7 @@ const Login = () => {
     
     const auth = getAuth();
 
-    const { signInUsingGoogle } = useAuth();
+    const {signInUsingGoogle } = useAuth();
     const [loggedInUser, setLoggedInUser] = useState({});
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

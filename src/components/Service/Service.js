@@ -17,7 +17,7 @@ const Service = ({ service }) => {
                         </Card.Text>
                     </Card.Body>
                     <div className="mx-auto">
-                        <Link to={`/service/${id}`}><button className="btn btn-success px-5">Details</button></Link>
+                        <Link to={`/service/${id}`}><button className="btn-details px-5">Details</button></Link>
                     </div>
                 </Card>
             </Col>
