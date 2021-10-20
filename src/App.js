@@ -9,10 +9,11 @@ import Header from './components/Header/Header';
 import NotFound from './components/NotFound/NotFound';
 import Footer from "./components/Footer/Footer";
 import Services from "./components/Services/Services";
-import Contact from "./components/Contact/Contact";
 import SignUp from "./components/SignUp/SignUp";
 import Login from "./components/Login/Login";
 import About from "./components/About/About";
+import Help from "./components/Help/Help";
+
 
 
 
@@ -35,8 +36,8 @@ function App() {
             <Route exact path="/about" >
               <About />
             </Route>
-            <Route exact path="/contact" >
-              <Contact />
+            <Route exact path="/help" >
+              <Help />
             </Route>
             <Route exact path="/signup" >
               <SignUp />

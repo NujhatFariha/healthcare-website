@@ -11,7 +11,7 @@ const Department= () => {
     return (
         // Details in the homepage
         <div className="pt-5 mt-5 mb-3">
-            <h1 className="text-center fw-bold" style={{color: 'rgb(34, 122, 90)'}}>Our Healthcare Department</h1>
+            <h1 className="text-center fw-bold" style={{color: 'rgb(46, 140, 163)'}}>Our Healthcare Department</h1>
             <p className="text-center fs-5 px-5 py-2">These are the available department of our healthcare center and we try to provide best facilities and care for you.<br/>Together we are working for creating a better healthcare community.</p>
             <div>
                 <div className="department-container container mb-5 mt-4">

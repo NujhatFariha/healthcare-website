@@ -16,30 +16,27 @@ const Header = () => {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                        <ul class="navbar-nav ms-auto pe-5 ">
+                        <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
                                 <Link to="/home" className="text-light text-decoration-none">Home</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to="/services" className="text-light text-decoration-none ps-3">Services</Link>
+                                <Link to="/services" className="text-light text-decoration-none ps-4">Services</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to="/about" className="text-light text-decoration-none ps-3">About Us</Link>
+                                <Link to="/about" className="text-light text-decoration-none ps-4">About Us</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to="/contact" className="text-light text-decoration-none ps-3">Contact</Link>
+                                <Link to="/help" className="text-light text-decoration-none ps-4">Help Club</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link to="/signup" className="text-light text-decoration-none ps-3">Sign Up</Link>
+                          
+                             <li class="nav-item">
+                                <Link to="/signup" className="text-light text-decoration-none ps-4">Sign Up</Link>
                             </li>
-                            {/* <li class="nav-item">
-                                <Link to="/login" className="text-light text-decoration-none ps-3">Login</Link>
-                            </li> */}
-
-                            <Link to="/login" className="text-light text-decoration-none ps-3">Login</Link>
-                            <span className="text-light text-decoration-none ps-3 pe-2">{user.displayName} </span>
-                            {user?.email && <button className="btn-logout" onClick={logOut}>Log out</button>}
-                        </ul>
+                            <Link to="/login" className="text-light text-decoration-none ps-4 pe-5">Login</Link>
+                            <span className="text-light text-decoration-none pe-3">{user.displayName} </span>
+                            {user?.email && <button className="btn-logout" onClick={logOut}>Log out</button>} 
+                            </ul>  
                     </div>
 
                 </div>

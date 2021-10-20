@@ -1,0 +1,21 @@
+.help {
+    background-image: url("https://blog.ipleaders.in/wp-content/uploads/2018/02/BV-Acharya-3.jpg");
+    height: 600px;
+    width: 100%;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+  }
+
+ .join-btn{
+     width: 130px;
+     border: none;
+     border-radius: 5px;
+     background-color: rgb(99, 39, 81);
+     padding: 8px 10px;
+     color: rgb(255, 254, 254);
+     font-weight: 600;
+     font-size: 18px;
+ }

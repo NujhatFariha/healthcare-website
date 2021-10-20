@@ -1,38 +1,38 @@
 [
     {
+        "id": "srv7720",
+        "serviceName": "Medical & Surgical Care",
+        "description": "We provide outstanding medical care to our patients and our expert surgeons are there for surgery of the patient and we treat all our patients with care and support they need. ",
+        "image": "https://medicalandhealthcare.com/wp-content/uploads/2017/07/Medical-Surgical-Nursing-300x199.jpg"
+    },
+    {
         "id": "srv1520",
         "serviceName": "Paediatric Physiotherapy",
-        "description": "Our Paediatric Physiotherapists provide assessment to help children with their mobility, strength, flexibility, balance, coordination and core stability. They help infants with attaining early developmental skills and help children with building fundamental gross motor skills.",
+        "description": "Our Paediatric Physiotherapists provide assessment to help children with their mobility, strength, flexibility and stability. They help children with building fundamental motor skills.",
         "image": "https://www.physioexperts.ca/wp-content/uploads/2019/11/shutterstock_434538988.jpg"
     },
     {
-        "id": "srv7720",
-        "serviceName": "Web Developer Bootcamp",
-        "description": "Learn web development in a easy and fun way.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OXE7vBBnghtHuyRIDGTDprAfDL-U-Hu9CA&usqp=CAU"
-    },
-    {
         "id": "srv1720",
-        "serviceName": "Web Developer Bootcamp",
-        "description": "Learn web development in a easy and fun way.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OXE7vBBnghtHuyRIDGTDprAfDL-U-Hu9CA&usqp=CAU"
+        "serviceName": "Aged Care",
+        "description": "We provide service and care to our aged patients.We have extra special doctors for taking care of aged patient all the time and providing them with required services.",
+        "image": "https://w7.pngwing.com/pngs/401/710/png-transparent-home-care-service-nursing-home-care-health-care-aged-care-assisted-living-doctors-and-nurses-people-medical-medicine.png"
     },
     {
         "id": "srv1204",
-        "serviceName": "Web Developer Bootcamp",
-        "description": "Learn web development in a easy and fun way.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OXE7vBBnghtHuyRIDGTDprAfDL-U-Hu9CA&usqp=CAU"
+        "serviceName": "Emergency and Intensive care",
+        "description": "We have emergency doctors for handling any emergency situation. we also provide services at late night for amy emergency. We are available 24/7 for out patients.",
+        "image": "http://hopeer911.com/wp-content/uploads/2018/01/Emergency-Medical-Care-Services-Lufkin-.jpg"
     },
     {
         "id": "srv6890",
-        "serviceName": "Web Developer Bootcamp",
-        "description": "Learn web development in a easy and fun way.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OXE7vBBnghtHuyRIDGTDprAfDL-U-Hu9CA&usqp=CAU"
+        "serviceName": "Mental Health Support",
+        "description": "We provide special care to the people suffering from mental trauma. we take care of our patients with intensive support and heal them with proper care they deserve.",
+        "image": "https://familydoctor.org/wp-content/uploads/2018/05/mental-health-doc.jpg"
     },
     {
         "id": "srv5456",
-        "serviceName": "The MegaJava Crash Course",
-        "description": "Learn and explore java for beginner to advance",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQriS_cl36F6JmXbrU_ki4aC9z-vz48hSZw&usqp=CAU"
+        "serviceName": "Cardiovascular Health Care",
+        "description": "We provide treatment to the patients with cardiac diseases. We have many special medical instruments for it and we provide all the facilities to our patients",
+        "image": "https://courses.leeds.ac.uk/images/AL4_9493_800_x_260.jpg"
     }
 ]
